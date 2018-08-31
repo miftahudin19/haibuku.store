@@ -92,15 +92,14 @@ include ('header.php')
                     <input type="password" name="reg_password2" placeholder="Confirm Password" required>
                     <br>
                     <?php if(in_array("Passwords yang dimasukan tidak sama<br>", $error_array)) echo "Passwords yang dimasukan tidak sama<br>"; 
-                    else if(in_array("Passwords hanya bisa karakter huruf dan angka<br>", $error_array)) echo "Passwords hanya bisa karakter huruf dan angka<br>";
-                    else if(in_array("Passwords harus antara 5 atau 30 karakter<br>", $error_array)) echo "Passwords harus antara 5 atau 30 karakter<br>"; ?>
+                    else if(in_array("Passwords hanya bisa karakter huruf dan angka<br>", $error_array)) echo "Passwords hanya bisa karakter huruf dan angka<br>"; ?>
 
 
                     <input type="submit" name="register_button" value="Register">
                     <br>
 
 
-                    <?php if(in_array("<span style='color: #14C800;'>Registrasi berhasil, Data anda sudah terdaftar!</span><br>", $error_array)) echo "<span style='color: #14C800;'>You're all set! Go ahead and login!</span><br>"; ?>
+                    <?php if(in_array("<span style='color: #14C800;'>Registrasi berhasil, Data anda sudah terdaftar!</span><br>", $error_array)) echo "<span style='color: #14C800;'>Registrasi berhasil, Data anda sudah terdaftar!</span><br>"; ?>
 
                     <a href="#" id="signin" class="signin">Sudah punya akun? Login disini!</a>
                 </form>
